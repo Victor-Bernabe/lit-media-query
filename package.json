@@ -1,0 +1,30 @@
+{
+  "name": "lit-media-query",
+  "version": "1.0.0",
+  "description": "Web component for media queries (like iron-media-query) implemented with LitElement.",
+  "main": "lit-media-query",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Victor-Bernabe/lit-media-query.git"
+  },
+  "keywords": [
+    "media-query",
+    "webcomponent",
+    "lit-html",
+    "LitElement",
+    "component",
+    "element"
+  ],
+  "author": "Victor Bernabe Perez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Victor-Bernabe/lit-media-query/issues"
+  },
+  "homepage": "https://github.com/Victor-Bernabe/lit-media-query#readme",
+  "dependencies": {
+    "lit-element": "^2.0.1"
+  }
+}
