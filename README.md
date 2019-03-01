@@ -1,5 +1,7 @@
 # lit-media-query
 
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/lit-media-query) ![version](https://img.shields.io/badge/version-1.0.4-blue.svg)
+
 Web component for media queries (like iron-media-query) implemented with LitElement.
 
 ## Installation
@@ -57,7 +59,7 @@ In this example, when the viewport is less than 460px the variable `_isMobile` w
 
 ## Browser compatibility
 
-`lit-media-query` uses [Visual Viewport API](https://developer.mozilla.org/en-US/docs/Web/API/Visual_Viewport_API) which is not yet compatible with all browsers. Check [Browser Compatibility](https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport#Browser_compatibility) to know where this component will work.
+`lit-media-query` uses [Visual Viewport API](https://developer.mozilla.org/en-US/docs/Web/API/Visual_Viewport_API) which is not yet compatible with all browsers, but it will fall back to `window onresize` event, increasing the browsers compatibility.
 
 ## Contributing
 
@@ -68,6 +70,16 @@ In this example, when the viewport is less than 460px the variable `_isMobile` w
 5. Submit a pull request :D
 
 ## Changelog
+
+### [1.0.4] - 2019-03-02
+#### Added
+- Compatibility for browsers not supporting Visual Viewport API.
+
+#### Changed
+- Nothing.
+
+#### Removed
+- Nothing
 
 ### [1.0.3] - 2019-03-01
 #### Added

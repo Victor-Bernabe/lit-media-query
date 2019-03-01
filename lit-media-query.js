@@ -25,9 +25,16 @@ class LitMediaQuery extends LitElement {
   }
 
   firstUpdated() {
-    window.visualViewport.addEventListener('resize', () => {
-      this._handleRisize();
-    });
+    // Check if Visual Viewport API is supported
+    if(typeof window.visualViewport !== 'undefined') {
+      window.visualViewport.addEventListener('resize', () => {
+        this._handleRisize();
+      });
+    } else {
+      window.addEventListener('resize', () => {
+        this._handleRisize();
+      });
+    }
   }
 
   _handleRisize() {
