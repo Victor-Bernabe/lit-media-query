@@ -55,6 +55,10 @@ Variable `value` from the event is a `Boolean`. Will be `true` if the media quer
 
 In this example, when the viewport is less than 460px the variable `_isMobile` will be `true`.
 
+## Browser compatibility
+
+`lit-media-query` uses [Visual Viewport API](https://developer.mozilla.org/en-US/docs/Web/API/Visual_Viewport_API) which is not yet compatible with all browsers. Check [Browser Compatibility](https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport#Browser_compatibility) to know where this component will work.
+
 ## Contributing
 
 1. Fork it!
@@ -64,6 +68,16 @@ In this example, when the viewport is less than 460px the variable `_isMobile` w
 5. Submit a pull request :D
 
 ## Changelog
+
+### [1.0.3] - 2019-03-01
+#### Added
+- Browser compatibility section in README.md
+
+#### Changed
+- Nothing.
+
+#### Removed
+- Nothing
 
 ### [1.0.2] - 2019-03-01
 #### Added
