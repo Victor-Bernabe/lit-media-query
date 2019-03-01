@@ -11,7 +11,7 @@ npm install lit-media-query --save
 Then, import lit-media-query into your element:
 
 ```javascript
-import lit-media-query from 'lit-media-query.js';
+import 'lit-media-query/lit-media-query.js';
 ```
 
 or in an html file:
