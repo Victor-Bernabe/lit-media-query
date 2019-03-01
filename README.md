@@ -65,6 +65,28 @@ In this example, when the viewport is less than 460px the variable `_isMobile` w
 
 ## Changelog
 
+### [1.0.2] - 2019-03-01
+#### Added
+- Nothing
+
+#### Changed
+- Update Changelog in README.md
+
+#### Removed
+- Nothing
+
+
+### [1.0.1] - 2019-03-01
+#### Added
+- Nothing
+
+#### Changed
+- README.md instructions to import component.
+
+#### Removed
+- Nothing
+
+
 ### [1.0.0] - 2019-03-01
 #### Added
 - README.md
