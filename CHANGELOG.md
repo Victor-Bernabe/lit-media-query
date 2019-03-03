@@ -1,6 +1,9 @@
 # Changelog
 
 ### v1.0.5 - 2019-3-03
+- Fixed documentation for lit-media-query.
+
+### v1.0.5 - 2019-3-03
 - Added documentation for lit-media-query component.
 
 ### v1.0.4 - 2019-03-02
