@@ -1,8 +1,17 @@
 import { LitElement, html } from 'lit-element';
 
+/**
+ * The `lit-media-query` component detects when a media query
+ * is `true` or `false`.
+ */
 class LitMediaQuery extends LitElement {
   static get properties() {
     return {
+      /**
+       * Media query to be watched by the element.
+       *
+       * Can be modified at run time by setting a new value.
+       */
       query: { type: String },
       _match: { type: Boolean }
     };
@@ -67,3 +76,11 @@ class LitMediaQuery extends LitElement {
 }
 
 customElements.define('lit-media-query', LitMediaQuery);
+
+/**
+ * Fired when `lit-media-query` changes detects a change
+ * in the media query (from `true` to `false` and vice versa).
+ *
+ * @event changed
+ * @param {boolean} value if media query is being fulfilled or not
+ */
