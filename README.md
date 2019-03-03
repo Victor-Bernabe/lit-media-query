@@ -1,6 +1,6 @@
 # lit-media-query
 
-[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/lit-media-query) ![version](https://img.shields.io/badge/version-1.0.4-blue.svg)
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/lit-media-query) ![npm](https://img.shields.io/npm/v/lit-media-query.svg)
 
 Web component for media queries (like iron-media-query) implemented with LitElement.
 

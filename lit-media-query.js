@@ -5,6 +5,15 @@ import { LitElement, html } from 'lit-element';
  * is `true` or `false`.
  */
 class LitMediaQuery extends LitElement {
+
+/**
+ * Fired when `lit-media-query` changes detects a change
+ * in the media query (from `true` to `false` and vice versa).
+ *
+ * @event changed
+ * @param {boolean} value If media query is being fulfilled or not.
+ */
+
   static get properties() {
     return {
       /**
@@ -76,11 +85,3 @@ class LitMediaQuery extends LitElement {
 }
 
 customElements.define('lit-media-query', LitMediaQuery);
-
-/**
- * Fired when `lit-media-query` changes detects a change
- * in the media query (from `true` to `false` and vice versa).
- *
- * @event changed
- * @param {boolean} value if media query is being fulfilled or not
- */
