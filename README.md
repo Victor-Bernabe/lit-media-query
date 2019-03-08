@@ -4,6 +4,8 @@
 
 Web component for media queries (like iron-media-query) implemented with LitElement.
 
+See [Documentation](https://www.webcomponents.org/element/lit-media-query), [Demo](https://lit-media-query.victorbp.site/).
+
 ## Installation
 
 ```shell
