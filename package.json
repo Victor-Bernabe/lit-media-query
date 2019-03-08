@@ -1,6 +1,6 @@
 {
   "name": "lit-media-query",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Web component for media queries (like iron-media-query) implemented with LitElement.",
   "main": "lit-media-query",
   "scripts": {
