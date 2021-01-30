@@ -29,6 +29,7 @@ class LitMediaQuery extends LitElement {
     super();
     this.query = '(max-width:460px)';
     this._match = false;
+    this.boundResizeHandler = this._handleRisize.bind(this);
   }
 
   render() {
@@ -41,17 +42,27 @@ class LitMediaQuery extends LitElement {
     `;
   }
 
-  firstUpdated() {
+  connectedCallback() {
+    super.connectedCallback();
     // Check if Visual Viewport API is supported
     if (typeof window.visualViewport !== 'undefined') {
-      window.visualViewport.addEventListener('resize', () => {
-        this._handleRisize();
-      });
+      window.visualViewport.addEventListener('resize', this.boundResizeHandler);
     } else {
-      window.addEventListener('resize', () => {
-        this._handleRisize();
-      });
+      window.addEventListener('resize', this.boundResizeHandler);
     }
+  }
+
+  disconnectedCallback() {
+    // Remove event listeners
+    if (typeof window.visualViewport !== 'undefined') {
+      window.visualViewport.removeEventListener(
+        'resize',
+        this.boundResizeHandler
+      );
+    } else {
+      window.removeEventListener('resize', this.boundResizeHandler);
+    }
+    super.disconnectedCallback();
   }
 
   _handleRisize() {

@@ -1,5 +1,9 @@
 # Changelog
 
+### 1.0.9 - 2021-01-30
+
+- [Fix] Remove event listeners on disconnectedCallback.
+
 ### 1.0.8 - 2021-01-30
 
 - [Add] Files for local development.
