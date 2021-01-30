@@ -42,6 +42,11 @@ class LitMediaQuery extends LitElement {
     `;
   }
 
+  firstUpdated() {
+    // Check media query once before 'resize' event
+    this._initialMediaQueryCheck();
+  }
+
   connectedCallback() {
     super.connectedCallback();
     // Check if Visual Viewport API is supported
@@ -63,6 +68,31 @@ class LitMediaQuery extends LitElement {
       window.removeEventListener('resize', this.boundResizeHandler);
     }
     super.disconnectedCallback();
+  }
+
+  _initialMediaQueryCheck() {
+    console.log(this.query);
+    if (window.matchMedia(this.query).matches) {
+      this.dispatchEvent(
+        new CustomEvent('changed', {
+          detail: {
+            value: true
+          },
+          composed: true,
+          bubbles: true
+        })
+      );
+    } else {
+      this.dispatchEvent(
+        new CustomEvent('changed', {
+          detail: {
+            value: false
+          },
+          composed: true,
+          bubbles: true
+        })
+      );
+    }
   }
 
   _handleRisize() {

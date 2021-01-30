@@ -19,7 +19,6 @@ class MyApp extends LitElement {
         height: 500px;
         background-image: linear-gradient(to bottom, #232526, #414345);
         color: #dfdfdf;
-        padding: 0 35px;
       }
 
       #title {
@@ -74,10 +73,6 @@ class MyApp extends LitElement {
       }
 
       @media all and (max-width: 580px) {
-        :host {
-          padding: 0 20px;
-        }
-
         #title {
           font-size: 26px;
         }

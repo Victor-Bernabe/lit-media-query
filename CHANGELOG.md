@@ -1,5 +1,9 @@
 # Changelog
 
+### 1.10.0 - 2021-01-30
+
+- [Add] Initial media query check.
+
 ### 1.0.9 - 2021-01-30
 
 - [Fix] Remove event listeners on disconnectedCallback.
