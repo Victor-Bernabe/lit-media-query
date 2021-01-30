@@ -5,14 +5,13 @@ import { LitElement, html } from 'lit-element';
  * is `true` or `false`.
  */
 class LitMediaQuery extends LitElement {
-
-/**
- * Fired when `lit-media-query` changes detects a change
- * in the media query (from `true` to `false` and vice versa).
- *
- * @event changed
- * @param {boolean} value If media query is being fulfilled or not.
- */
+  /**
+   * Fired when `lit-media-query` changes detects a change
+   * in the media query (from `true` to `false` and vice versa).
+   *
+   * @event changed
+   * @param {boolean} value If media query is being fulfilled or not.
+   */
 
   static get properties() {
     return {
@@ -34,17 +33,17 @@ class LitMediaQuery extends LitElement {
 
   render() {
     return html`
-    <style>
-      :host {
-        display: none;
-      }
-    </style>
+      <style>
+        :host {
+          display: none;
+        }
+      </style>
     `;
   }
 
   firstUpdated() {
     // Check if Visual Viewport API is supported
-    if(typeof window.visualViewport !== 'undefined') {
+    if (typeof window.visualViewport !== 'undefined') {
       window.visualViewport.addEventListener('resize', () => {
         this._handleRisize();
       });
@@ -56,28 +55,32 @@ class LitMediaQuery extends LitElement {
   }
 
   _handleRisize() {
-    if(window.matchMedia(this.query).matches) {
+    if (window.matchMedia(this.query).matches) {
       // From no match to match
-      if(this._match === false) {
-        this.dispatchEvent(new CustomEvent('changed', {
-          detail: {
-            value: true
-          },
-          composed: true,
-          bubbles: true
-        }));
+      if (this._match === false) {
+        this.dispatchEvent(
+          new CustomEvent('changed', {
+            detail: {
+              value: true
+            },
+            composed: true,
+            bubbles: true
+          })
+        );
         this._match = true;
       }
     } else {
       // From match to no match
-      if(this._match === true) {
-        this.dispatchEvent(new CustomEvent('changed', {
-          detail: {
-            value: false
-          },
-          composed: true,
-          bubbles: true
-        }));
+      if (this._match === true) {
+        this.dispatchEvent(
+          new CustomEvent('changed', {
+            detail: {
+              value: false
+            },
+            composed: true,
+            bubbles: true
+          })
+        );
         this._match = false;
       }
     }

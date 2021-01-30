@@ -1,26 +1,38 @@
 # Changelog
 
+### 1.0.8 - 2021-01-30
+
+- [Add] Files for local development.
+
 ### 1.0.7 - 2019-03-08
-- Added [demo page](https://lit-media-query.victorbp.site/).
+
+- [Add][demo page](https://lit-media-query.victorbp.site/).
 
 ### 1.0.5 - 2019-3-03
-- Fixed documentation for lit-media-query.
+
+- [Fix] Documentation for lit-media-query.
 
 ### 1.0.5 - 2019-3-03
-- Added documentation for lit-media-query component.
+
+- [Add] Documentation for lit-media-query component.
 
 ### 1.0.4 - 2019-03-02
-- Added compatibility for browsers not supporting Visual Viewport API.
+
+- [Add] Compatibility for browsers not supporting Visual Viewport API.
 
 ### 1.0.3 - 2019-03-01
-- Added browser compatibility section in README.md
+
+- [Add] Browser compatibility section in README.md
 
 ### 1.0.2 - 2019-03-01
-- Updated Changelog in README.md
+
+- [Change] Changelog in README.md
 
 ### 1.0.1 - 2019-03-01
-- Added README.md instructions to import component.
+
+- [Add] README.md instructions to import component.
 
 ### 1.0.0 - 2019-03-01
-- Added README.md
-- Added LICENSE
+
+- [Add] README.md
+- [Add] LICENSE
