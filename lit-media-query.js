@@ -71,7 +71,6 @@ class LitMediaQuery extends LitElement {
   }
 
   _initialMediaQueryCheck() {
-    console.log(this.query);
     if (window.matchMedia(this.query).matches) {
       this.dispatchEvent(
         new CustomEvent('changed', {
